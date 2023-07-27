@@ -4,15 +4,9 @@ public class App {
     
     public static void main(String[] args) {
 
-        // Instanziierung
-        Cat cat1 = new Cat();
+        // Instanziierung mit custom constructor
+        Cat cat1 = new Cat("Grizabella", "white", 29);
    
-        // Wertzuweisung
-        // cat1.firstName = "Grizabella";
-        cat1.changeName("Grizabella");
-        cat1.furColor = "white";
-        cat1.age =29;
-
         // Ausgabe
         output(cat1.tellYourName());
         output(cat1.furColor);
@@ -21,11 +15,7 @@ public class App {
 
         output("--------------------");
      
-        Cat cat2 = new Cat();
-      
-        cat2.firstName = "Alonzo";
-        cat2.furColor = "grey";
-        cat2.age =35;
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
 
         output(cat2.tellYourName());
         output(cat2.furColor);
