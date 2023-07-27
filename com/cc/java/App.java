@@ -8,19 +8,19 @@ public class App {
         Cat cat1 = new Cat("Grizabella", "white", 29);
    
         // Ausgabe
-        output(cat1.tellYourName());
-        output(cat1.furColor);
-        // Typkonvertierung int--> String
-        output(Integer.toString(cat1.age));
+        output(cat1.getFirstName());
+        output(cat1.getFurColor());
+        output(Integer.toString(cat1.getAge()));
 
         output("--------------------");
      
         Cat cat2 = new Cat("Alonzo", "grey", 35);
 
-        output(cat2.tellYourName());
-        output(cat2.furColor);
-        // Typkonvertierung int--> String
-        output(Integer.toString(cat2.age));
+        // Ausgabe
+        output(cat2.getFirstName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge()));
+       
     }
 
     public static void output(String outputData) {
