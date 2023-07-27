@@ -8,12 +8,13 @@ public class App {
         Cat cat1 = new Cat();
    
         // Wertzuweisung
-        cat1.firstName = "Grizabella";
+        // cat1.firstName = "Grizabella";
+        cat1.changeName("Grizabella");
         cat1.furColor = "white";
         cat1.age =29;
 
         // Ausgabe
-        output(cat1.firstName);
+        output(cat1.tellYourName());
         output(cat1.furColor);
         // Typkonvertierung int--> String
         output(Integer.toString(cat1.age));
@@ -26,7 +27,7 @@ public class App {
         cat2.furColor = "grey";
         cat2.age =35;
 
-        output(cat2.firstName);
+        output(cat2.tellYourName());
         output(cat2.furColor);
         // Typkonvertierung int--> String
         output(Integer.toString(cat2.age));
