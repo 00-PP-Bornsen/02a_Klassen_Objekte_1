@@ -7,16 +7,17 @@ public class App {
         // Instanziierung mit custom constructor
         Cat cat1 = new Cat("Grizabella", "white", 29);
    
-        // Ausgabe
+        // Ausgabe über Getter
         output(cat1.getFirstName());
         output(cat1.getFurColor());
         output(Integer.toString(cat1.getAge()));
+
 
         output("--------------------");
      
         Cat cat2 = new Cat("Alonzo", "grey", 35);
 
-        // Ausgabe
+        // Ausgabe über Getter
         output(cat2.getFirstName());
         output(cat2.getFurColor());
         output(Integer.toString(cat2.getAge()));
